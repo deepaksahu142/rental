@@ -1,0 +1,101 @@
+@media screen and (max-width: 1365px) {
+  .container {
+    width: calc(100% - 200px);
+    max-width: calc(100% - 200px);
+  }
+  header .location {
+    margin-right: 100px;
+  }
+  .main-menu {
+    width: 150px;
+  }
+  .main-menu li {
+    padding: 5px 8px;
+  }
+  .main-menu li a ul {
+    width: 150px;
+    right: -150px;
+  }
+  .main-menu li a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .listingBox .category {
+    width: 32%;
+    flex-basis: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .location {
+    margin-right: 0;
+    position: static;
+  }
+  .main-menu {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 1;
+    margin: 0;
+  }
+  .main-menu li a ul {
+    position: static;
+    width: 100%;
+    right: 100%;
+  }
+
+  .main-menu li:hover,
+  .main-menu li:hover a {
+    background: white;
+    color: #000;
+  }
+
+  .main-menu li ul {
+    background: grey;
+  }
+  .main-menu li ul {
+    box-shadow: none;
+  }
+  .main-menu li ul li,
+  .main-menu li ul li a {
+    padding: 5px;
+  }
+
+  .container {
+    width: calc(95%);
+    max-width: calc(95%);
+  }
+
+  .listingBox .category {
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0 0 2% 0;
+  }
+  .listingBox .category img {
+    width: auto;
+    margin: auto;
+    display: block;
+    max-height: 150px;
+  }
+  footer {
+    text-align: center;
+  }
+  header {
+    padding: 20px 0;
+    overflow: auto;
+  }
+
+  header .logo {
+    float: left;
+    font-size: 12px;
+  }
+  header .location .selectlocation {
+    font-size: 14px;
+  }
+  .content-section {
+    padding: 20px 0;
+  }
+}
